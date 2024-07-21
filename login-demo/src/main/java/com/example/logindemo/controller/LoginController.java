@@ -1,4 +1,4 @@
-package main.java.com.example.login_demo.controller;
+package com.example.logindemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,5 +14,10 @@ public class LoginController {
     @GetMapping("/welcome")
     public String welcome() {
         return "welcome";
+    }
+
+    @GetMapping("/test")
+    public String test() {
+        return "test";
     }
 }
